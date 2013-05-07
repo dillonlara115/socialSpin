@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SocialSpin</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner" style="width: auto; padding: 0 20px;">
+			<a class="brand" href="#">Social Spin - Be Heard</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<ul class="nav nav-list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Artists</a></li>
+					<li><a href="#">Songs</a></li>
+					<li><a href="#">Albums</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="span9">
+				<%= yield %>
+			</div>
+		</div>	
+	</div>
+	<div class="navbar navbar-fixed-bottom" style="position: absolute;">
+		<div class="navbar-inner">
+	  		<ul class="nav">
+	  			<li><a href="#">Contact Dillon Lara at dillonlara115@gmail.com for any questions</a></li>
+	  		</ul>
+	  	</div>
+	</div>
+</body>
+</html>
