@@ -283,7 +283,7 @@ a:focus {
 [class*="span"] {
   float: left;
   min-height: 1px;
-  margin-left: 20px;
+  
 }
 
 .container,
@@ -306,7 +306,8 @@ a:focus {
 }
 
 .span9 {
-  width: 700px;
+  padding: 0px 25px;
+  width: 650px;
   background-color: #f9f8f6;
 }
 
