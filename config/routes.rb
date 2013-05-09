@@ -1,4 +1,6 @@
 SocialSpin::Application.routes.draw do
+  get "contact/contact"
+
   devise_for :users
 
   get "home/index"

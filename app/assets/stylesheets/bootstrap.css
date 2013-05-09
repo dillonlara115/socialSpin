@@ -332,7 +332,7 @@ a:focus {
 }
 
 .span3 {
-  width: 220px;
+  width: 200px;
 }
 
 .span2 {
@@ -1109,7 +1109,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  width: 400px;
 }
 
 textarea {
@@ -6162,4 +6162,5 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+  width: 135px;
 }
