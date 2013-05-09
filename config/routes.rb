@@ -1,4 +1,10 @@
 SocialSpin::Application.routes.draw do
+  get "songs/index"
+
+  get "albums/index"
+
+  get "artists/index"
+
   resources :media
 
 
