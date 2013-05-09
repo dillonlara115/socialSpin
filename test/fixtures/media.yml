@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  artist: MyString
+  artist_description: MyText
+  album: MyString
+  album_description: MyText
+  year: MyString
+  average_rating: MyString
+
+two:
+  artist: MyString
+  artist_description: MyText
+  album: MyString
+  album_description: MyText
+  year: MyString
+  average_rating: MyString

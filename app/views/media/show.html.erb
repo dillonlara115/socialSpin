@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Artist:</b>
+  <%= @medium.artist %>
+</p>
+
+<p>
+  <b>Artist description:</b>
+  <%= @medium.artist_description %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%= @medium.album %>
+</p>
+
+<p>
+  <b>Album description:</b>
+  <%= @medium.album_description %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @medium.year %>
+</p>
+
+<p>
+  <b>Average rating:</b>
+  <%= @medium.average_rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_medium_path(@medium) %> |
+<%= link_to 'Back', media_path %>

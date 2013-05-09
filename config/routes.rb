@@ -1,4 +1,7 @@
 SocialSpin::Application.routes.draw do
+  resources :media
+
+
   get "contact/contact"
 
   devise_for :users
