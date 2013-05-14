@@ -1,4 +1,6 @@
 class MediaController < ApplicationController
+  helper_method :show
+
   # GET /media
   # GET /media.json
   def index
