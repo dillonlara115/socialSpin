@@ -1,14 +1,16 @@
 <h1>What's New</h1>
 
-<% @media.each do |medium| %>
-  <ul class="thumbnails">
+<ul class="thumbnails">
+  <% @media.each do |medium| %>
     <li class="span4">
-    <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="">
-      <h3><%= medium.artist %></h3>
-      <p><%= medium.album %></p></li>
-  </ul>
-<% end %>
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+        <h3><%= medium.artist %></h3>
+        <p><%= medium.album %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
 
 
 
