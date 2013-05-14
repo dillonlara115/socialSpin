@@ -7,6 +7,7 @@ SocialSpin::Application.routes.draw do
 
   resources :media
 
+  get "home/index"
 
   get "contact/contact"
 
