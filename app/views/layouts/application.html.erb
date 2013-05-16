@@ -9,7 +9,7 @@
 <body>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner" style="width: auto; padding: 0 20px;">
-			<a class="brand" href="/home/index.html">Social Spin - Be Heard</a>
+			<a class="brand" href="/home/index.html">Social Spin <%=image_tag("logo.png", alt: "Albums Image")%> Be Heard</a>
 			<form class="form-inline">
 					<ul class="nav pull-right">
 						<%= form_for("user", :url => user_session_path) do |f| %>
