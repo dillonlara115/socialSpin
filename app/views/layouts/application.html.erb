@@ -20,7 +20,7 @@
 						<% else %>
 							<li><%= f.email_field :email, :autofocus => true, "class" => "input-small", "placeholder" => "Email" %></li>
 							<li><%= f.password_field :password, "class" => "input-small", "placeholder" => "password" %></li>
-							<li><%= f.submit "Sign in" %></li>
+							<li><%= f.submit "Sign in", "class" => "btn-custom-lighten" %></li>
 							<li><%= link_to "Register", new_user_registration_path  %></li>
 						<% end %>					
 					</ul>
@@ -29,8 +29,8 @@
 		</div>
 		<div class="nav-search">
 		<form class="form-search">
-		  <input type="text" class="input-medium search-query">
-		  <button type="submit" class="btn">Search</button>
+		  <input type="text" class="input-medium search-query" placeholder="search for...">
+		  <button type="submit" class="btn-custom-lighten">Search</button>
 		</form>
 	</div>
 	</div>
@@ -39,15 +39,16 @@
 		<div class="row">
 			<div class="span3">
 				<ul class="nav nav-list" data-spy="affix">
-					<li><a href="/home/index.html">Home</a></li>
-					<li><a href="/artists/index.html">Artists</a></li>
-					<li><a href="/songs/index.html">Songs</a></li>
-					<li><a href="/albums/index.html">Albums</a></li>
-					<li><a href="/contact/contact.html">Contact</a></li>
+					<li><a href="/home/index.html"><%=image_tag("home.png", alt: "Example Image")%><br />Home</a></li>
+					<li><a href="/artists/index.html"><%=image_tag("artists.png", alt: "Example Image")%><br />Artists</a></li>
+					<li><a href="/songs/index.html"><%=image_tag("songs.png", alt: "Example Image")%><br />Songs</a></li>
+					<li><a href="/albums/index.html"><%=image_tag("albums.png", alt: "Example Image")%><br />Albums</a></li>
+					<li><a href="/contact/contact.html"><%=image_tag("contact.png", alt: "Example Image")%><br />Contact</a></li>
 				</ul>
 			</div>
 			<div class="span9">
 				<%= yield %>
+
 			</div>
 		</div>	
 	</div>
