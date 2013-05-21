@@ -9,9 +9,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'simple_form'
 gem 'letsrate'
-gem 'paperclip'
-gem 'aws-s3'
-gem 'aws-sdk'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
