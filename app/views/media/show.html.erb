@@ -1,11 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-  # show view - pick a size:
-    <%= image_tag @medium.arPhoto.url %>
-    <%= image_tag @medium.arPhoto.url(:medium) %>
-    <%= image_tag @medium.arPhoto(:thumb) %>
-    <%= image_tag @medium.arPhoto(:large) %>
-
 <p>
   <b>Artist:</b>
   <%= @medium.artist %>
@@ -35,7 +29,6 @@
   <b>Average rating:</b>
   <%= @medium.average_rating %>
 </p>
-
 
 Rating : <%= rating_for @medium, "artist" %>
 
