@@ -30,6 +30,7 @@
   <%= @medium.average_rating %>
 </p>
 
+Rating : <%= rating_for @medium, "artist" %>
 
 <%= link_to 'Edit', edit_medium_path(@medium) %> |
 <%= link_to 'Back', media_path %>
