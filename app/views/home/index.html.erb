@@ -5,8 +5,8 @@
     <li class="span4">
       <div class="thumbnail">
       	<%= image_tag medium.image_url.to_s, "data-src" => "holder.js/300x200" %>  
-        <h3><%= medium.artist %></h3>
-        <p><%= medium.album %></p>
+        <h3><%= link_to medium.artist %></h3>
+        <p><%= link_to medium.album %></p>
       </div>
     </li>
   <% end %>
