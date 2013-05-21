@@ -1,5 +1,5 @@
 class Medium < ActiveRecord::Base
-  attr_accessible :album, :album_description, :artist, :artist_description, :average_rating, :year
+  attr_accessible :album, :album_description, :artist, :artist_description, :average_rating, :year, :image
 
-  letsrate_rateable "album", "artist"
+  mount_uploader :image, ImageUploader
 end

@@ -4,7 +4,7 @@
   <% @media.each do |medium| %>
     <li class="span4">
       <div class="thumbnail">
-        <img data-src="holder.js/300x200" alt="">
+      	<%= image_tag medium.image_url.to_s, "data-src" => "holder.js/300x200" %>  
         <h3><%= medium.artist %></h3>
         <p><%= medium.album %></p>
       </div>

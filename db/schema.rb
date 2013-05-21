@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20130520235559452) do
     t.string   "average_rating"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.string   "image"
   end
 
   create_table "rates", :force => true do |t|

@@ -1,4 +1,4 @@
-<%= simple_form_for(@medium) do |f| %>
+<%= simple_form_for @medium, :html => {:multipart => true} do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -8,6 +8,7 @@
     <%= f.input :album_description %>
     <%= f.input :year %>
     <%= f.input :average_rating %>
+    <%= f.file_field :image %>
   </div>
 
   <div class="form-actions">

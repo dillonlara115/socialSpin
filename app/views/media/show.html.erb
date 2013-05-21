@@ -5,6 +5,8 @@
   <%= @medium.artist %>
 </p>
 
+<%= image_tag @medium.image_url.to_s %>
+
 <p>
   <b>Artist description:</b>
   <%= @medium.artist_description %>
@@ -30,7 +32,7 @@
   <%= @medium.average_rating %>
 </p>
 
-Rating : <%= rating_for @medium, "artist" %>
+
 
 <%= link_to 'Edit', edit_medium_path(@medium) %> |
 <%= link_to 'Back', media_path %>
