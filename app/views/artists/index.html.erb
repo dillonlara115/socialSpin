@@ -2,15 +2,17 @@
 
 <% @media.each do |medium| %>
 	<div class="media">
-	  <a class="pull-left" href="#">
-	    <img class="media-object" data-src="holder.js/64x64">
-	  </a>
+	  <div class="pull-left" href="#">
+	    <%= image_tag medium.image_url.to_s, "class" => "media-object", "data-src" => "holder.js/300x200" %>
+	  </div>
 	  <div class="media-body">
 	    <h4 class="media-heading"><%= medium.artist %></h4>
 	    <!-- Nested media object -->
 	    <div class="media">
 	     <%= medium.artist_description %>
+	     <h4>Rate Artist :</h4> <%= rating_for medium, "artist" %>
 	    </div>
+
 	  </div>
 	</div>
 <% end %>
