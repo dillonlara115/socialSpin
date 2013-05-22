@@ -1,4 +1,6 @@
 SocialSpin::Application.routes.draw do
+  get "profiles/show"
+
   match '/rate' => 'rater#create', :as => 'rate'
 
   get "songs/index"

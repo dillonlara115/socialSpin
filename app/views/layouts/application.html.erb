@@ -14,7 +14,7 @@
 					<ul class="nav pull-right">
 						<%= form_for("user", :url => user_session_path) do |f| %>
 						<% if user_signed_in? %>
-							<li><%= link_to current_user.user_name, profiles_show_path(id: current_user.profile_name) %></li>
+							<li><%= link_to current_user.user_name, profiles_show_path(id: current_user.user_name) %></li>
 							<li><%= link_to current_user.first_name, edit_user_registration_path %></li>
 							<li><%= link_to "Logout", destroy_user_session_path, method: :delete  %></li>
 						<% else %>
