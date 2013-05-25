@@ -10,6 +10,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'letsrate'
 gem 'carrierwave'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 
 # Gems used only for assets and not required
