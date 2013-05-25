@@ -1,5 +1,7 @@
 SocialSpin::Application.routes.draw do
-  get "profiles/show"
+  get 'profiles/show'
+
+  devise_for :users
 
   match '/rate' => 'rater#create', :as => 'rate'
 
@@ -15,12 +17,11 @@ SocialSpin::Application.routes.draw do
 
   get "contact/contact"
 
-  devise_for :users
-
   get "media/index"
+  
+  match 'users/:id' => 'profiles#show'
 
-  get '/:id', to: 'profiles#show'
-
+  #get '/:id', to: 'profiles#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

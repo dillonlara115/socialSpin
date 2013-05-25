@@ -12,17 +12,18 @@
 			<a class="brand" href="/home/index.html">Social Spin <%=image_tag("logo.png", alt: "Albums Image")%> Be Heard</a>
 			<form class="form-inline">
 					<ul class="nav pull-right">
-						<%= form_for("user", :url => user_session_path) do |f| %>
+						
 						<% if user_signed_in? %>
 							<li><%= link_to current_user.first_name, profiles_show_path %></li>
 							<li><%= link_to "Logout", destroy_user_session_path, method: :delete  %></li>
 						<% else %>
 							<li><%= link_to "Sign In", user_session_path  %></li>
 							<li><%= link_to "Register", new_user_registration_path  %></li>
-						<% end %>					
+						<% end %>
+											
 					</ul>
 				</form>
-			<% end %>
+			
 		</div>
 		<div class="nav-search">
 		<form class="form-search">
@@ -45,6 +46,7 @@
 			</div>
 			<div class="span9">
 				<%= yield %>
+				
 
 			</div>
 		</div>	
