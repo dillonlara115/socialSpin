@@ -4,4 +4,8 @@ class Medium < ActiveRecord::Base
   letsrate_rateable "artist", "album"
 
   mount_uploader :image, ImageUploader
+
+  searchable do
+    text :album, :artist, :year 
+    end
 end

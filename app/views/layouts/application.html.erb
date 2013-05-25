@@ -29,7 +29,17 @@
 		<form class="form-search">
 		  <input type="text" class="input-medium search-query" placeholder="search for...">
 		  <button type="submit" class="btn-custom-lighten">Search</button>
+
+
 		</form>
+
+
+		<%= form_tag media_path, :method => :get do %>
+		  <p>
+		    <%= text_field_tag :search, params[:search] %>
+		    <%= submit_tag "Search", :name => nil %>
+		  </p>
+		<% end %>
 	</div>
 	</div>
 	

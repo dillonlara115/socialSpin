@@ -15,6 +15,8 @@ SocialSpin::Application.routes.draw do
 
   get "home/index"
 
+  get 'media/show'
+
   get "contact/contact"
 
   get "media/index"
