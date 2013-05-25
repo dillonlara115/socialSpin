@@ -2,7 +2,10 @@ class HomeController < ApplicationController
   # GET /media
   # GET /media.json
   def index
-    @media = Medium.all
+    @search = Medium.search do
+      fulltext params[:search]
+    end
+    @media = @search.results
 
     respond_to do |format|
       format.html # index.html.erb
