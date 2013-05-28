@@ -4045,6 +4045,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list > li > a {
+  text-align: center;
   padding: 3px 15px;
   color: #ebebeb;
 }
@@ -5623,6 +5624,7 @@ input[type="submit"].btn.btn-mini {
      -moz-transition: all 0.2s ease-in-out;
        -o-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 a.thumbnail:hover,

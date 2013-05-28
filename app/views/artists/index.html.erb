@@ -2,11 +2,11 @@
 
 <% @media.each do |medium| %>
 	<div class="media">
-	  <div class="pull-left" href="#">
+	  <div class="pull-left">
 	    <%= image_tag medium.image_url.to_s, "class" => "media-object", "data-src" => "holder.js/300x200" %>
 	  </div>
 	  <div class="media-body">
-	    <h4 class="media-heading"><%= medium.artist %></h4>
+	    <h4 class="media-heading"><%=link_to medium.artist, medium %></h4>
 	    <!-- Nested media object -->
 	    <div class="media">
 	     <%= medium.artist_description %>

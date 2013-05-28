@@ -23,21 +23,15 @@
 											
 					</ul>
 				</form>
-			
 		</div>
-		<div class="nav-search">
-		
+		<div class="nav-search">		
 		<%= form_tag home_index_path, :method => :get do %>
 		  <p>
 		    <%= text_field_tag :search, params[:search], 'class' => "input-medium search-query", 'placeholder' => "search for..." %>
 		    <%= submit_tag "Search", :name => nil, "class" => "btn-custom-lighten" %>
 		  </p>
 		<% end %>
-		
-
-
-		
-	</div>
+		</div>
 	</div>
 	
 	<div class="container">	

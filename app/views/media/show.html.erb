@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Artist:</b>
-  <%= @medium.artist %>
-</p>
 
-<%= image_tag @medium.image_url.to_s %>
+<h3><%= @medium.artist %></h3>
+<div class="media">
+<div class="pull-left">
+  <%= image_tag @medium.image_url.to_s, "class" => "media-object", "data-src" => "holder.js/300x200" %>
+</div>
 
 <p>
   <b>Artist description:</b>
@@ -31,8 +31,4 @@
   <b>Average rating:</b>
   <%= @medium.average_rating %>
 </p>
-
-
-
-<%= link_to 'Edit', edit_medium_path(@medium) %> |
-<%= link_to 'Back', media_path %>
+</div>
