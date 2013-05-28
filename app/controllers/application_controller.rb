@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   helper_method :show
 
-  protect_from_forgery
+  #protect_from_forgery
 
   # GET /media
   # GET /media.json

@@ -7,5 +7,5 @@ class Medium < ActiveRecord::Base
 
   searchable do
     text :album, :artist, :year 
-    end
+  end
 end
