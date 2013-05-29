@@ -1,10 +1,21 @@
 <div class="page-header">
   <h1><%= current_user.full_name %></h1>
 </div>
+<div class="media">
+	<div class="thumbnail pull-left span4">
+		<%= image_tag current_user.image_url.to_s, "class" => "media-object", "data-src" => "holder.js/300x200" %>
+	</div>
+	<div class="media-body">
+		<div class="media">
+			<p>Name: <%= current_user.first_name %></p>
+			<p>Username: <%= current_user.user_name %></p>
+			<p>Email address: <%= current_user.email %></p>
+			<p>Favorite Bands: <%= current_user.fav_bands %></p>
+			<p>About Me: <%= current_user.about %></p>
+			<center>
+				<%= link_to 'Edit Profile Information', edit_user_registration_path %>
+			</center>
+		</div>
+	</div>
+</div>
 
-<p>Name: <%= current_user.first_name %></p>
-<p>Username: <%= current_user.user_name %></p>
-<p>Email address: <%= current_user.email %></p>
-
-
-<%= link_to 'Edit Profile Information', edit_user_registration_path %>
