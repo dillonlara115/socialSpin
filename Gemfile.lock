@@ -65,6 +65,7 @@ GEM
     multi_json (1.7.3)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     pr_geohash (1.0.0)
     rack (1.4.5)
@@ -136,6 +137,7 @@ DEPENDENCIES
   devise
   jquery-rails
   letsrate
+  pg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   simple_form
