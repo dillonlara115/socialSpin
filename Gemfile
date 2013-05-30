@@ -12,7 +12,7 @@ group :production do
   gem 'pg'
 end
 
-gem 'thin'
+
 #gem 'heroku'
 gem 'devise'
 gem 'simple_form'
