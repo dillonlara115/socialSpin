@@ -4,12 +4,15 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
-	gem 'sqlite3'
-
-
-
-
+gem 'heroku'
 gem 'devise'
 #gem 'simple_form'
 gem 'letsrate'
