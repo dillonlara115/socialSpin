@@ -13,7 +13,7 @@ group :production do
 end
 
 
-#gem 'heroku'
+gem 'heroku'
 gem 'devise'
 gem 'simple_form'
 gem 'letsrate'
