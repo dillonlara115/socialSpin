@@ -8,8 +8,6 @@ class MediaController < ApplicationController
       fulltext params[:search]
     end
     @media = @search.results
-
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @media }

@@ -4,20 +4,17 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-  gem 'thin'
-end
 
-gem 'heroku'
+gem 'sqlite3'
+
+
+#gem 'heroku'
 gem 'devise'
-#gem 'simple_form'
+gem 'simple_form'
 gem 'letsrate'
 gem 'carrierwave'
-
+gem 'sunspot_solr'
+gem 'sunspot_rails'
 
 
 # Gems used only for assets and not required
